@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/views/layout/layout.jsp">
+		<put-attribute name="title" value="" />
+
+		<put-attribute name="body" value="" />
+		<!-- <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" 
+			/> -->
+	</definition>
+
+	<definition name="home" extends="base.definition">
+		<put-attribute name="title" value="Home" />
+		<!-- <put-attribute name="menu" value="/WEB-INF/views/layout/menu.jsp" 
+			/> -->
+		<put-attribute name="header"
+			value="/WEB-INF/views/layout/headerGeneral.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/home.jsp" />
+	</definition>
+
+
+	<definition name="uml" extends="base.definition">
+		<put-attribute name="title" value="UML Modelling" />
+		<!-- <put-attribute name="menu" value="/WEB-INF/views/layout/menu.jsp" 
+			/> -->
+		<put-attribute name="header" value="/WEB-INF/views/layout/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/uml.jsp" />
+	</definition>
+
+	<definition name="erd" extends="base.definition">
+		<put-attribute name="title" value="ER Modelling" />
+		<!-- <put-attribute name="menu" value="/WEB-INF/views/layout/menu.jsp" 
+			/> -->
+		<put-attribute name="header"
+			value="/WEB-INF/views/layout/headerGeneral.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/erd.jsp" />
+	</definition>
+
+	<definition name="index" extends="base.definition">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/layout/headerGeneral.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/index.jsp" />
+	</definition>
+
+	<definition name="payment" extends="base.definition">
+		<put-attribute name="title" value="Payment" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/layout/headerGeneral.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/payment.jsp" />
+	</definition>
+
+<definition name="success" extends="base.definition">
+		<put-attribute name="title" value="Success" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/layout/headerGeneral.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jsp/success.jsp" />
+	</definition>
+
+	<definition name="errorPage" extends="base.definition">
+		<put-attribute name="title" value="Error Page" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/layout/headerGeneral.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/errorPage.jsp" />
+	</definition>
+
+	<definition name="oneTimePassword" extends="base.definition">
+		<put-attribute name="title" value="OneTime Password" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/layout/headerGeneral.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jsp/oneTimePassword.jsp" />
+	</definition>
+
+<definition name="changePassword" extends="base.definition">
+		<put-attribute name="title" value="Change Password" />
+		<put-attribute name="header"
+			value="" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jsp/changePassword.jsp" />
+	</definition>
+
+
+<definition name="newPassword" extends="base.definition">
+		<put-attribute name="title" value="New Password" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/layout/headerGeneral.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jsp/newPassword.jsp" />
+	</definition>
+
+
+<definition name="folderDialog" extends="base.definition">
+		<put-attribute name="title" value="Folder Dialog" />
+		<put-attribute name="header"
+			value="" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jsp/folderDialog.jsp" />
+	</definition>
+	
+	<definition name="gDrive" extends="base.definition">
+		<put-attribute name="title" value="G Drive" />
+		<put-attribute name="header"
+			value="" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jsp/gDrive.jsp" />
+	</definition>
+
+</tiles-definitions>

@@ -1,0 +1,15 @@
+ul#tabOut {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  ul#tabOut li {
+    display: none;
+    padding: 15px;
+    border: solid 20px #d2f4e9; }
+    ul#tabOut li.active {
+      display: block; }
+    ul#tabOut li h2 {
+      font-weight: 400;
+      margin-bottom: 30px;
+      padding-bottom: 5px;
+      border-bottom: solid 5px #32c896; }
